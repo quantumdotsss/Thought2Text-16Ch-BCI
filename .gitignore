@@ -1,0 +1,49 @@
+# Raw or derived datasets
+data/
+datasets/
+images/
+*.csv
+*.npy
+*.npz
+
+# Training artifacts and experiment tracking
+checkpoints/
+outputs/
+results/
+wandb/
+runs/
+checkpoint-*/
+
+# Model artifacts are excluded unless explicitly allow-listed below
+*.pth
+*.pt
+*.pt2
+*.safetensors
+!weights/adapter.pth
+!weights/adapter_fp16.pth
+!weights/model.safetensors
+!weights/model_fp16.safetensors
+
+# Documents and archives that may contain source data
+*.pdf
+*.zip
+*.tar
+*.tar.gz
+
+# Local environments and editors
+.env
+.env.*
+.idea/
+.vscode/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# Locally exported edge artifacts
+artifacts/

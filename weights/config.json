@@ -1,0 +1,39 @@
+{
+  "architectures": [
+    "ChannelNetModel"
+  ],
+  "down_kernel": 3,
+  "down_stride": 2,
+  "embedding_size": 512,
+  "in_channels": 1,
+  "input_height": 128,
+  "input_width": 440,
+  "model_type": "eeg_channelnet",
+  "num_classes": 40,
+  "num_residual_blocks": 4,
+  "num_spatial_layers": 4,
+  "num_temp_layers": 4,
+  "out_channels": 50,
+  "spatial_stride": [
+    2,
+    1
+  ],
+  "temp_channels": 10,
+  "temporal_dilation_list": [
+    [1, 1],
+    [1, 2],
+    [1, 4],
+    [1, 8],
+    [1, 16]
+  ],
+  "temporal_kernel": [
+    1,
+    33
+  ],
+  "temporal_stride": [
+    1,
+    2
+  ],
+  "torch_dtype": "float32",
+  "transformers_version": "4.44.0"
+}

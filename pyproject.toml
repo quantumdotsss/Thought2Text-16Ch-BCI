@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thought2text-16ch-edge"
+version = "0.1.0"
+description = "Parameter-efficient 16-channel EEG adaptation for Thought2Text"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "quantumdotsss" }]
+dependencies = [
+  "numpy>=1.24",
+  "safetensors>=0.4",
+  "torch>=2.1",
+  "transformers>=4.40,<5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[tool.setuptools.packages.find]
+include = ["thought2text_edge*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
