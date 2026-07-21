@@ -1,13 +1,13 @@
-# Thought2Text-16Ch Edge
+# Thought2Text-16Ch BCI
 
-**Parameter-efficient low-density EEG-to-text adaptation with model
-compression and edge-deployment feasibility tests.**
+**A parameter-efficient 16-channel brain-computer interface for EEG-to-text
+generation, model compression, and edge-deployment experiments.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB.svg)](pyproject.toml)
 [![Data](https://img.shields.io/badge/raw%20data-not%20included-success.svg)](#data-and-privacy)
 
-This project adapts the research pipeline from
+This BCI project adapts the research pipeline from
 [Thought2Text](https://github.com/abhijitmishra/Thought2Text) from a
 128-channel laboratory EEG setup to an OpenBCI-like 16-channel montage. A
 small learnable adapter reconstructs the feature layout expected by the
@@ -81,8 +81,8 @@ controlled ablation. See [the results notes](docs/RESULTS.md) for limitations.
 ## Quick start
 
 ```bash
-git clone https://github.com/quantumdotsss/Thought2Text-16Ch-Edge.git
-cd Thought2Text-16Ch-Edge
+git clone https://github.com/quantumdotsss/Thought2Text-16Ch-BCI.git
+cd Thought2Text-16Ch-BCI
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e .
